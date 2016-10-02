@@ -29,7 +29,7 @@ public class ConnectionManager {
 	        dataSource = new ComboPooledDataSource();  
 	        dataSource.setUser("root");  
 	        dataSource.setPassword("123456");  
-	        dataSource.setJdbcUrl("jdbc:mysql://192.168.0.121:3306/test");  
+	        dataSource.setJdbcUrl("jdbc:mysql://192.168.0.111:3306/test");  
 	        dataSource.setDriverClass("com.mysql.jdbc.Driver");  
 	        dataSource.setInitialPoolSize(10);  
 	        dataSource.setMinPoolSize(5);  
