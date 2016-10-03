@@ -109,11 +109,11 @@ public class Test {
         try {  
             if (null == conn || conn.isClosed())  
                 conn = ConnectionManager.getConnection();  
-            List<Test_1Bean> test1Beans = (List<Test_1Bean>) new QueryRunner().query(conn, SQL,  
+            List<TestBean> test1Beans = (List<TestBean>) new QueryRunner().query(conn, SQL,  
                     new Object[] { "%JohnGao%" }, new BeanListHandler(  
-                            Test_1Bean.class));  
+                            TestBean.class));  
             if (null != test1Beans) {  
-                for (Test_1Bean test1Bean : test1Beans) {  
+                for (TestBean test1Bean : test1Beans) {  
                     //System.out.println(test1Bean.getUsername());  
                     //System.out.println(test1Bean.getPassword());  
                 }  
